@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Standard Shield -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Building_ShieldGenerator"]/comps/li[@Class="FrontierDevelopments.General.CompProperties.CompProperties_HeatSink"]</xpath>
+        <value>
+            <li Class="FrontierDevelopments.General.CompProperties.CompProperties_RedistHeatSink">
+                <grams>200</grams>
+                <specificHeat>.385</specificHeat>
+                <conductivity>399</conductivity>
+                <minorThreshold>100</minorThreshold>
+                <majorThreshold>150</majorThreshold>
+                <criticalThreshold>200</criticalThreshold>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Building_ShieldGenerator"]/comps</xpath>
+        <value>
+            <li Class="RedistHeat.CompAirTraderProperties" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Building_ShieldGenerator"]/placeWorkers</xpath>
+        <value>
+            <li>RedistHeat.PlaceWorker_DuctBase</li>
+        </value>
+    </Operation>
+
+    <!-- Large Shield -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="Building_ShieldGeneratorLarge"]/comps/li[@Class = "FrontierDevelopments.General.CompProperties.CompProperties_HeatSink"]</xpath>
+        <value>
+            <li Class="FrontierDevelopments.General.CompProperties.CompProperties_RedistHeatSink">
+                <grams>500</grams>
+                <specificHeat>.385</specificHeat>
+                <conductivity>399</conductivity>
+                <minorThreshold>100</minorThreshold>
+                <majorThreshold>150</majorThreshold>
+                <criticalThreshold>200</criticalThreshold>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Building_ShieldGeneratorLarge"]/comps</xpath>
+        <value>
+            <li Class="RedistHeat.CompAirTraderProperties" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Building_ShieldGeneratorLarge"]/placeWorkers</xpath>
+        <value>
+            <li>RedistHeat.PlaceWorker_DuctBase</li>
+        </value>
+    </Operation>
+</Patch>
