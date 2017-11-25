@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Shields RedistHeat Compability by Frontier Developments</name>
+    <name>[A17] Shields RedistHeat Compability by Frontier Developments</name>
     <targetVersion>0.17.1546</targetVersion>
     <author>JohnnyNova and Jetpack Maniac</author>
     <url>https://github.com/JonnyNova/Rimworld-Shields-RedistHeat</url>
     <description>Version: 1.0
+        Expansion for Frontier Developments Shields: http://steamcommunity.com/sharedfiles/filedetails/?id=1210471200
         Adds compatibility for RedistHeat.
     </description>
 </ModMetaData>
