@@ -17,7 +17,7 @@ namespace FrontierDevelopments.General.Comps
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            Common.WipeExistingPipe(parent.Position);
+            Common.WipeExistingPipe(parent.Map, parent.Position);
             _airTrader = parent.GetComp<CompAirTrader>();
         }
 
